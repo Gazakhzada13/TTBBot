@@ -1,6 +1,6 @@
-[Turanə](https://t.me/TuraneBot) Azərbaycanca olan qrup idarə botudur.
+[TTB](https://t.me/TTBAzeBot) Azərbaycanca olan qrup idarə botudur.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/FaridDadashzade/TuraneBot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Gazakhzada13/TTBBot)
 
 ## Credits
 

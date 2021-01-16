@@ -75,7 +75,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/Turane-Bot-12-12"
+SAITAMA_IMG = ""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
@@ -198,7 +198,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Turanəni qrupa əlavə et",
+                            text="☑️ Məni bir qrupa əlavə et",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
@@ -208,24 +208,24 @@ def start(update: Update, context: CallbackContext):
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
                              text="🔔 Yeniliklər kanalı",
-                             url="https://t.me/TTBBots")
+                             url="https://t.me/CyberSpaceAz")
                      ],
                      [
                          InlineKeyboardButton(
                              text="🧾 Bot haqqında",
-                             url="https://t.me/FaridDadashzade")
+                             url="https://t.me/Gazahkzada13")
                          InlineKeyboardButton(
                              text="🧾 Ətraflı Məlumat",
-                             url="https://t.me/TheBaghirof")
+                             url="https://t.me/WhoGoodFellas")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="🗄 Repo URL",
+                             text="🗄 Repo",
                              url="https://github.com/AnimeKaizoku/SaitamaRobot")
                      ]]))
     else:
         update.effective_message.reply_text(
-            "Bot əla işləyir!\n<b>Bu müddətdən bəri işləyirəm:</b> <code>{}</code>"
+            "Bot işləyir!\n<b>Bu müddətdən bəri işləyirəm:</b> <code>{}</code>"
             .format(uptime),
             parse_mode=ParseMode.HTML)
 
@@ -499,7 +499,7 @@ def donate(update: Update, context: CallbackContext):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True)
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 1527722982 and DONATION_LINK:
             update.effective_message.reply_text(
                 "Hal-hazırda məni idarə edən şəxsə bağış edə bilərsiniz "
                 "[here]({})".format(DONATION_LINK),
@@ -543,7 +543,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Bot hal-hazırda işləyir!")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Bot işıəyir!")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!")

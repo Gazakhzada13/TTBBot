@@ -1,5 +1,5 @@
 {
-      "name": "TuranəRobot",
+      "name": "TTBAzeBot",
       "description": "Azərbaycanca olan çox funksiyalı qrup idarə botu.",
       "keywords": [
          "telegram",
@@ -8,7 +8,7 @@
          "manager",
          "Saitama"
       ],   
-   "repository": "https://github.com/FaridDadashzade/Turanebot",
+   "repository": "https://github.com/Gazakhzada13/TTBBot",
    "addons": [
       {
          "options": {
